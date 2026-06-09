@@ -124,24 +124,24 @@ const LoginPage = () => {
             </div>
 
             <div className="flex items-center justify-between">
-              {/* ✅ FIX 1: added cursor-pointer to label */}
-              <label className="flex items-center cursor-pointer">
-                <input
-                  type="checkbox"
-                  {...register('rememberMe')} {/* ✅ FIX 2: registered with react-hook-form */}
-                  className="rounded border-navy-300 text-primary-600 focus:ring-primary-500"
-                />
-                <span className="ml-2 text-sm text-navy-600 dark:text-navy-300">
-                  Remember me
-                </span>
-              </label>
-              <Link
-                to="/forgot-password"
-                className="text-sm text-primary-600 hover:text-primary-700 dark:text-primary-400"
-              >
-                Forgot password?
-              </Link>
-            </div>
+  <label className="flex items-center cursor-pointer">
+    <input
+      type="checkbox"
+      {...register("rememberMe")}
+      className="rounded border-navy-300 text-primary-600 focus:ring-primary-500"
+    />
+    <span className="ml-2 text-sm text-navy-600 dark:text-navy-300">
+      Remember me
+    </span>
+  </label>
+
+  <Link
+    to="/forgot-password"
+    className="text-sm text-primary-600 hover:text-primary-700 dark:text-primary-400"
+  >
+    Forgot password?
+  </Link>
+</div>
 
             <button
               type="submit"
